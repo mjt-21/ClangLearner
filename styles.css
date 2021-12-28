@@ -1,0 +1,143 @@
+/****** FONTS *****/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&display=swap');
+
+/****** BROAD SELECTORS *****/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #222222;
+}
+
+/****** NAVBAR *****/
+
+.navbar {
+    background-color: #52525269;
+    border-radius: 25px;
+    margin: 25px 25px 0 25px;
+}
+
+.navbar ul li {
+    padding-left: 1.2vw;
+    padding-right: 1.2vw;
+}
+
+.navbar ul li a {
+    display: inline-block;
+    color: white;
+    opacity: 75%;
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar ul li a:hover {
+    opacity: 100%;
+}
+
+@media (max-width: 480px) {
+    .navbar ul li a {
+        font-size: 60%;
+    }
+}
+
+#logo {
+    color: white;
+    opacity: 100%;
+}
+
+/****** HEADERS *****/
+
+h2 {
+    color: white;
+    font-size: 36px;
+    margin: 50px 0 0 5vw;
+    font-family: 'Lato', sans-serif;
+}
+
+.h2line {
+    display: block;
+    width: 30vw;
+    min-width: 300px;
+    height: 5px;
+    background: #f1cd8f;
+    margin: 10px 0 50px 5vw;
+}
+
+h3 {
+    color: white;
+    font-size: 28px;
+    margin: 50px 0 45px 5vw;
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+}
+
+/****** PARAGRAPHS / TEXT / CODE SNIPPETS *****/
+
+p {
+    color: white;
+    font-size: 18px;
+    width: 50%;
+    margin-left: 5vw;
+}
+
+.p-list li {
+    color: white;
+    margin-left: 5vw;
+    padding-bottom: 10px;
+}
+
+.p-list li:last-child {
+    padding-bottom: 0;
+}
+
+.p-list li a {
+    color: rgb(94, 120, 235);
+}
+
+.p-list li a:hover {
+    color: rgb(55, 85, 218);
+}
+
+.code-snippet {
+    width: 650px;
+    margin: 50px 0 50px 5vw;
+}
+
+@media (max-width: 480px) {
+    p {
+        font-size: 16px;
+        width: 95vw;
+    }
+
+    .p-list li a {
+        font-size: 16px;
+    }
+
+    .code-snippet {
+        width: 351px;
+    }
+}
+
+@media (max-width: 801px) {
+    p {
+        width: 90vw;
+    }
+
+
+}
+
+@media (max-width: 374px) {
+    .code-snippet {
+        width: 300px;
+    }
+}
